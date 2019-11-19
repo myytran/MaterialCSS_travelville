@@ -50,6 +50,44 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <!-- section/slider-->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" alt="" />
+          <div class="caption center-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              eos placeat sed, fuga nesciunt maiores.
+            </h5>
+            <a href="#" class="btn large">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort2.jpg" alt="" />
+          <div class="caption left-align">
+            <h2>We Work with all Budgets</h2>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              eos placeat sed, fuga nesciunt maiores.
+            </h5>
+            <a href="#" class="btn large">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort3.jpg" alt="" />
+          <div class="caption right-align">
+            <h2>Group & Individual Getaways</h2>
+            <h5 class="light grey-text text-lighten-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              eos placeat sed, fuga nesciunt maiores.
+            </h5>
+            <a href="#" class="btn large">Learn More</a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
     <!--Import jQuery before materialize.js-->
     <script
@@ -60,7 +98,16 @@
     <script>
       $(document).ready(function() {
         // Custom JS & jQuery here
+        //Init SideNav
         $('.button-collapse').sideNav();
+
+        //Init Slider
+        $('.slider').slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000
+        });
       });
     </script>
   </body>
